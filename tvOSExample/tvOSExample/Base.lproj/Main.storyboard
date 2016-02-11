@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tvOSExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccf-GY-3RG">
+                                <rect key="frame" x="0.0" y="802" width="960" height="270"/>
+                                <color key="backgroundColor" red="1" green="0.1764705882" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Toronto"/>
+                                <connections>
+                                    <action selector="buttonActionToronto:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="mRk-9A-aZ3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQf-kk-ArB">
+                                <rect key="frame" x="967" y="524" width="960" height="270"/>
+                                <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Montreal"/>
+                                <connections>
+                                    <action selector="buttonMontrealAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="LHr-XR-0dm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOi-X0-XnX">
+                                <rect key="frame" x="967" y="802" width="960" height="270"/>
+                                <color key="backgroundColor" red="1" green="0.88993178299999998" blue="0.074767848780000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Ottawa"/>
+                                <connections>
+                                    <action selector="buttonOttawaAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="1Yw-yr-LCS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywn-ew-byi">
+                                <rect key="frame" x="0.0" y="524" width="960" height="270"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.83921568629999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Vancouver"/>
+                                <connections>
+                                    <action selector="buttonVancouverAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ZOD-Xb-pEL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the capital of Canadá" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7j-OR-8iz">
+                                <rect key="frame" x="0.0" y="98" width="1920" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="canadaflag" translatesAutoresizingMaskIntoConstraints="NO" id="ZoR-RT-ddd">
+                                <rect key="frame" x="736" y="223" width="449" height="262"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VQf-kk-ArB" firstAttribute="leading" secondItem="ywn-ew-byi" secondAttribute="trailing" constant="7" id="0EM-C6-DjB"/>
+                            <constraint firstItem="R7j-OR-8iz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Wu-zf-MvS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VQf-kk-ArB" secondAttribute="trailing" constant="-27" id="2Dn-dM-Pnt"/>
+                            <constraint firstItem="R7j-OR-8iz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="5lh-6L-bv3"/>
+                            <constraint firstItem="VQf-kk-ArB" firstAttribute="width" secondItem="ccf-GY-3RG" secondAttribute="width" id="8yI-rX-BVh"/>
+                            <constraint firstItem="ccf-GY-3RG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="9Jp-pi-GvU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ccf-GY-3RG" secondAttribute="bottom" constant="8" id="Bh9-Nq-Keu"/>
+                            <constraint firstItem="R7j-OR-8iz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.25" id="Edm-Wi-36F"/>
+                            <constraint firstItem="ccf-GY-3RG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="G1V-Xp-6xT"/>
+                            <constraint firstItem="ccf-GY-3RG" firstAttribute="top" secondItem="ywn-ew-byi" secondAttribute="bottom" constant="8" id="GmI-5v-WJi"/>
+                            <constraint firstItem="XOi-X0-XnX" firstAttribute="height" secondItem="ccf-GY-3RG" secondAttribute="height" id="Kjh-3u-idP"/>
+                            <constraint firstItem="ywn-ew-byi" firstAttribute="width" secondItem="ccf-GY-3RG" secondAttribute="width" id="Pt7-89-ibS"/>
+                            <constraint firstItem="ccf-GY-3RG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="QOz-ie-jSn"/>
+                            <constraint firstItem="VQf-kk-ArB" firstAttribute="height" secondItem="ccf-GY-3RG" secondAttribute="height" id="UvR-mT-bIw"/>
+                            <constraint firstItem="XOi-X0-XnX" firstAttribute="leading" secondItem="ccf-GY-3RG" secondAttribute="trailing" constant="7" id="Yl4-gC-3bp"/>
+                            <constraint firstItem="XOi-X0-XnX" firstAttribute="width" secondItem="ccf-GY-3RG" secondAttribute="width" id="hc0-1W-xhJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XOi-X0-XnX" secondAttribute="bottom" constant="8" id="hcW-pF-WX5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XOi-X0-XnX" secondAttribute="trailing" constant="-27" id="neM-vt-3l1"/>
+                            <constraint firstItem="ywn-ew-byi" firstAttribute="height" secondItem="ccf-GY-3RG" secondAttribute="height" id="urj-tt-k52"/>
+                            <constraint firstItem="XOi-X0-XnX" firstAttribute="top" secondItem="VQf-kk-ArB" secondAttribute="bottom" constant="8" id="wbf-7M-YTQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelQuestion" destination="R7j-OR-8iz" id="sH6-Dl-YlW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="477"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="canadaflag" width="800" height="400"/>
+    </resources>
+</document>

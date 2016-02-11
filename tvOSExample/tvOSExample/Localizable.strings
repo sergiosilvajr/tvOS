@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  tvOSExample
+
+  Created by Luis Sergio da Silva Junior on 2/11/16.
+  Copyright © 2016 Luis Sergio. All rights reserved.
+*/
+
+"labelText" = "What is the capital of Canada?";
+"wrong" = "Wrong answer! Please try again";
+"right" = "Right answer!";
